@@ -62,7 +62,7 @@ nav a:hover{
 
 .hero{
   height:100vh;
-  background:url("https://gaming-cdn.com/images/products/9459/orig/counter-strike-2-pc-mac-juego-steam-cover.jpg?v=1742208833");
+  background:url("img/fondoCounterStrike.jpg");
   background-size:cover;
   background-position:center;
   display:flex;
@@ -194,7 +194,7 @@ nav a:hover{
 
 .big{
   height:70vh;
-  background:url("https://giffiles.alphacoders.com/220/220992.gif");
+  background:url("img/inicio.gif");
   background-size:cover;
   background-position:center;
   display:flex;
