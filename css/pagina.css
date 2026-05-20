@@ -58,9 +58,9 @@ nav a:hover{
   font-weight:bold;
 }
 
-/* HERO */
+/* INICIO */
 
-.hero{
+.inicio{
   height:100vh;
   background:url("../img/fondoCounterStrike.jpg");
   background-size:cover;
@@ -71,24 +71,24 @@ nav a:hover{
   position:relative;
 }
 
-.hero::before{
+.inicio::before{
   content:"";
   position:absolute;
   inset:0;
   background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
 }
 
-.hero-content{
+.inicio-content{
   position:relative;
   max-width:700px;
 }
 
-.hero h1{
+.inicio h1{
   font-size:70px;
   letter-spacing:2px;
 }
 
-.hero p{
+.inicio p{
   margin-top:20px;
   color:#ccc;
   line-height:1.6;
@@ -190,42 +190,6 @@ nav a:hover{
   color:#ff9a1f;
 }
 
-/* BIG SECTION */
-
-.big{
-  height:70vh;
-  background:url("img/inicio.gif");
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  position:relative;
-}
-
-.big::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.6);
-}
-
-.big-content{
-  position:relative;
-  max-width:800px;
-}
-
-.big h2{
-  font-size:50px;
-  margin-bottom:15px;
-}
-
-.big p{
-  color:#ddd;
-  margin-bottom:25px;
-}
-
 /* FOOTER */
 
 footer{
@@ -235,15 +199,15 @@ footer{
   color:#777;
 }
 
-/* WEAPONS SECTION */
+/* ARMAS */
 
-.weapons{
+.armas{
   padding:100px 6%;
   background:#0d0d0d;
   text-align:center;
 }
 
-.weapons .section-title{
+.armas .section-title{
   font-size:48px;
   font-weight:900;
   letter-spacing:4px;
@@ -252,7 +216,7 @@ footer{
   text-transform:uppercase;
 }
 
-.weapons .section-sub{
+.armas .section-sub{
   color:#777;
   font-size:16px;
   letter-spacing:2px;
@@ -260,7 +224,7 @@ footer{
   text-transform:uppercase;
 }
 
-.weapons-grid{
+.armas-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
   gap:30px;
@@ -268,7 +232,7 @@ footer{
   margin:0 auto;
 }
 
-.weapon-card{
+.armas-card{
   background:linear-gradient(135deg,#1a1a1a 0%,#111 100%);
   border:1px solid #2a2a2a;
   border-radius:12px;
@@ -279,7 +243,7 @@ footer{
   cursor:pointer;
 }
 
-.weapon-card::before{
+.armas-card::before{
   content:"";
   position:absolute;
   top:0; left:0; right:0;
@@ -289,17 +253,17 @@ footer{
   transition:opacity 0.3s ease;
 }
 
-.weapon-card:hover{
+.armas-card:hover{
   transform:translateY(-8px);
   border-color:#ff9a1f44;
   box-shadow:0 20px 60px rgba(255,154,31,0.15);
 }
 
-.weapon-card:hover::before{
+.armas-card:hover::before{
   opacity:1;
 }
 
-.weapon-type{
+.armas-type{
   font-size:11px;
   letter-spacing:3px;
   color:#ff9a1f;
@@ -308,7 +272,7 @@ footer{
   margin-bottom:20px;
 }
 
-.weapon-img-wrap{
+.armas-img-wrap{
   position:relative;
   height:160px;
   display:flex;
@@ -317,7 +281,7 @@ footer{
   margin-bottom:28px;
 }
 
-.weapon-img-wrap::after{
+.armas-img-wrap::after{
   content:"";
   position:absolute;
   bottom:0; left:10%; right:10%;
@@ -326,7 +290,7 @@ footer{
   pointer-events:none;
 }
 
-.weapon-img-wrap img{
+.armas-img-wrap img{
   max-width:100%;
   max-height:140px;
   object-fit:contain;
@@ -334,12 +298,12 @@ footer{
   transition:transform 0.4s ease, filter 0.4s ease;
 }
 
-.weapon-card:hover .weapon-img-wrap img{
+.armas-card:hover .armas-img-wrap img{
   transform:scale(1.06) translateY(-4px);
   filter:drop-shadow(0 16px 36px rgba(255,154,31,0.45));
 }
 
-.weapon-name{
+.armas-name{
   font-size:28px;
   font-weight:900;
   letter-spacing:3px;
@@ -347,22 +311,14 @@ footer{
   margin-bottom:8px;
 }
 
-.weapon-skin{
-  font-size:13px;
-  color:#ff9a1f;
-  font-weight:600;
-  letter-spacing:1px;
-  margin-bottom:16px;
-}
-
-.weapon-desc{
+.armas-desc{
   color:#888;
   font-size:14px;
   line-height:1.7;
   margin-bottom:24px;
 }
 
-.weapon-stats{
+.armas-stats{
   display:flex;
   flex-direction:column;
   gap:8px;
@@ -407,7 +363,7 @@ footer{
   text-align:right;
 }
 
-.weapon-badge{
+.armas-badge{
   display:inline-block;
   padding:5px 14px;
   background:rgba(255,154,31,0.12);
@@ -418,22 +374,4 @@ footer{
   font-weight:700;
   letter-spacing:1px;
   text-transform:uppercase;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-  .hero h1{
-    font-size:40px;
-  }
-
-  .feature{
-    flex-direction:column;
-  }
-
-  .weapons-grid{
-    grid-template-columns:1fr;
-  }
-
 }
