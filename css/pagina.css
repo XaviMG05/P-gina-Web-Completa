@@ -130,7 +130,7 @@ nav a:hover{
 
 /* FEATURE SECTIONS */
 
-.feature{
+.info{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -138,27 +138,27 @@ nav a:hover{
   gap:60px;
 }
 
-.feature .text{
+.info .text{
   flex:1;
 }
 
-.feature h2{
+.info h2{
   font-size:45px;
   margin-bottom:20px;
   color:#ff9a1f;
 }
 
-.feature p{
+.info p{
   color:#ccc;
   line-height:1.7;
   font-size:18px;
 }
 
-.feature .image{
+.info .image{
   flex:1;
 }
 
-.feature img{
+.info img{
   width:100%;
   border-radius:10px;
 }
