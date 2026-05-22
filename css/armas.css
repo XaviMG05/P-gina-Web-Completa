@@ -1,3 +1,63 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0b0b0b;
+  color:white;
+}
+
+/* HEADER */
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 6%;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-weight:900;
+  letter-spacing:2px;
+  color:#ff9a1f;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  opacity:0.8;
+  transition:0.3s;
+}
+
+nav a:hover{
+  opacity:1;
+  color:#ff9a1f;
+}
+
+.play{
+  padding:10px 18px;
+  background:#ff9a1f;
+  color:black !important;
+  border-radius:30px;
+  font-weight:bold;
+}
+
 /* ARMAS */
 
 .armas{
