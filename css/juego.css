@@ -58,7 +58,7 @@ nav a:hover{
   font-weight:bold;
 }
 
-/* HERO */
+/* INICIO */
 
 .inicio{
   height:100vh;
@@ -236,7 +236,7 @@ footer{
   color:#777;
 }
 
-/* RESPONSIVE */
+/* CAMBIA LA PANTALLA PARA MOVILES Y TABLETS */
 
 @media(max-width:900px){
 

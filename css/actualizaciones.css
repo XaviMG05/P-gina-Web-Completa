@@ -103,7 +103,7 @@ nav a:hover,
   font-size:18px;
 }
 
-/* FEATURED UPDATE */
+/*  LEER PARCHE */
 
 .featured-update{
   display:flex;
@@ -161,7 +161,7 @@ nav a:hover,
   background:#ffb347;
 }
 
-/* PATCH NOTES */
+/* ÚLTIMOS CAMBIOS */
 
 .patch-notes{
   padding:100px 6%;
@@ -208,7 +208,7 @@ nav a:hover,
   line-height:1.7;
 }
 
-/* COMMUNITY */
+/* COMPETITIVO EN EVOLUCIÓN */
 
 .community{
   display:flex;
@@ -283,6 +283,8 @@ footer{
   }
 
 }
+
+/* VER MÁS NOTAS */
 .modal{
   display:none;
   position:fixed;

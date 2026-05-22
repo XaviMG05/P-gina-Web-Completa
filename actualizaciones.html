@@ -23,10 +23,10 @@
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- ÚLTIMA ACTUALIZACIÓN -->
   <section class="hero">
     <div class="overlay"></div>
-
+    <!-- ÚLTIMA ACTUALIZACIÓN -->
     <div class="hero-content">
       <p class="tag">ÚLTIMA ACTUALIZACIÓN</p>
       <h1>ACTUALIZACIONES</h1>
@@ -37,7 +37,7 @@
     </div>
   </section>
 
-  <!-- UPDATE DESTACADA -->
+  <!-- LEER PARCHE -->
   <section class="featured-update">
 
     <div class="featured-image">
@@ -64,17 +64,14 @@
 
   </section>
 
-  <!-- PATCH NOTES -->
+  <!-- ÚLTIMOS CAMBIOS -->
   <section class="patch-notes">
-
     <h2>ÚLTIMOS CAMBIOS</h2>
-
     <div class="patch-grid">
-
+      
       <article class="patch-card">
         <span class="patch-date">15 MAYO 2026</span>
         <h3>ACTUALIZACIÓN DE MAPAS</h3>
-
         <p>
           Ajustes visuales y nuevas zonas en Mirage y Inferno
           para mejorar la competitividad.
@@ -100,35 +97,26 @@
           y mejoras en seguridad competitiva.
         </p>
       </article>
-
     </div>
-
   </section>
 
-  <!-- SECCIÓN EXTRA -->
+  <!-- COMPETITIVO EN EVOLUCIÓN -->
   <section class="community">
 
     <div class="community-text">
       <h2>COMPETITIVO EN EVOLUCIÓN</h2>
-
       <p>
         Cada actualización mejora la experiencia táctica
         y mantiene el entorno competitivo más equilibrado.
       </p>
-
       <a href="#" class="btn-outline" onclick="openNotes(); return false;">VER MÁS NOTAS</a>
     </div>
 
     <div class="community-image">
       <img src="img/publicidad.jpg">
     </div>
-
+    
   </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Counter-Strike 2 Fan Page Replica</p>
-  </footer>
 
   <div id="patchModal" class="modal">
   <div class="modal-content">
@@ -146,9 +134,11 @@
       <li>Corrección de bugs en matchmaking competitivo.</li>
       <li>Optimización de rendimiento en GPUs de gama media.</li>
     </ul>
+    </div>
   </div>
-</div>
-    <script>
+
+  <!-- ABRIR PESTAÑA (VER MÁS NOTAS) -->
+  <script>
     function openModal(){
     document.getElementById("patchModal").style.display = "flex";
     }
@@ -163,35 +153,41 @@
         modal.style.display = "none";
     }
     }
-</script>
+  </script>
 
-<div id="notesModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeNotes()">&times;</span>
+  <!-- VER MÁS NOTAS -->
+  <div id="notesModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeNotes()">&times;</span>
 
-    <h2>NOTAS COMPLETAS</h2>
+      <h2>NOTAS COMPLETAS</h2>
 
-    <h3>Historial de actualizaciones</h3>
+      <h3>Historial de actualizaciones</h3>
 
-    <ul>
-      <li><b>22.05.2026</b> — Operación Shatterpoint: nuevo contenido competitivo y skins.</li>
-      <li><b>15.05.2026</b> — Ajustes en Mirage e Inferno para balance de mapas.</li>
-      <li><b>07.05.2026</b> — Mejora del sistema subtick y reducción de input lag.</li>
-      <li><b>30.04.2026</b> — Refuerzo del anti-cheat y detección automática de patrones sospechosos.</li>
-      <li><b>18.04.2026</b> — Optimización general de rendimiento en servidores europeos.</li>
-    </ul>
+      <ul>
+        <li><b>22.05.2026</b> — Operación Shatterpoint: nuevo contenido competitivo y skins.</li>
+        <li><b>15.05.2026</b> — Ajustes en Mirage e Inferno para balance de mapas.</li>
+        <li><b>07.05.2026</b> — Mejora del sistema subtick y reducción de input lag.</li>
+        <li><b>30.04.2026</b> — Refuerzo del anti-cheat y detección automática de patrones sospechosos.</li>
+        <li><b>18.04.2026</b> — Optimización general de rendimiento en servidores europeos.</li>
+      </ul>
+    </div>
   </div>
-</div>
 
-<script>
-function openNotes(){
-  document.getElementById("notesModal").style.display = "flex";
-}
+  <script>
+  function openNotes(){
+    document.getElementById("notesModal").style.display = "flex";
+  }
 
-function closeNotes(){
-  document.getElementById("notesModal").style.display = "none";
-}
-</script>
+  function closeNotes(){
+    document.getElementById("notesModal").style.display = "none";
+  }
+  </script>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Counter-Strike 2 Fan Page Replica</p>
+  </footer>
 </body>
 
 </html>

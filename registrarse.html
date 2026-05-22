@@ -24,44 +24,46 @@
   </header>
 
     <main>
-  <section class="formulario">
-          <h2 class="section-title">CREAR CUENTA</h2>
-          <p class="section-sub">Únete a la comunidad</p>
+      <section class="formulario">
+        <h2 class="section-title">CREAR CUENTA</h2>
+        <p class="section-sub">Únete a la comunidad</p>
 
-          <form class="form-contacto">
-            <input type="text" placeholder="Nombre de usuario" required>
-            <input type="password" placeholder="Contraseña" required>
-            <input type="email" placeholder="Correo electrónico" required>
+        <form class="form-contacto">
+          <input type="text" placeholder="Nombre de usuario" required>
+          <input type="password" placeholder="Contraseña" required>
+          <input type="email" placeholder="Correo electrónico" required>
 
-            <div class="genero">
-              <span class="genero-label">Género</span>
-              <div class="genero-opciones">
-                <label>
-                  <input type="radio" name="genero" value="hombre"> Hombre
-                </label>
-                <label>
-                  <input type="radio" name="genero" value="mujer"> Mujer
-                </label>
-                <label>
-                  <input type="radio" name="genero" value="otro"> Otro
-                </label>
-              </div>
+          <div class="genero">
+            <span class="genero-label">Género</span>
+            <div class="genero-opciones">
+              <label>
+                <input type="radio" name="genero" value="hombre"> Hombre
+              </label>
+              <label>
+                <input type="radio" name="genero" value="mujer"> Mujer
+              </label>
+              <label>
+                <input type="radio" name="genero" value="otro"> Otro
+              </label>
             </div>
-            <select name="servidor" required>
-              <option value="" disabled selected>-- Selecciona tu servidor --</option>
-              <option value="europa">Europa</option>
-              <option value="africa">África</option>
-              <option value="asia">Asia</option>
-              <option value="na">NA (Norte América)</option>
-              <option value="sa">SA (Sudamérica)</option>
-              <option value="oceania">Oceanía</option>
-            </select>
-            <button type="submit">REGISTRARSE</button>
-          </form>
-  </section>
+          </div>
+          <textarea name="descripcion" rows="4" 
+            placeholder="Cuéntanos algo sobre ti... ¿Cuál es tu rol favorito? ¿A qué mapas juegas más?"></textarea>
+          <select name="servidor" required>
+            <option value="" disabled selected>-- Selecciona tu servidor --</option>
+            <option value="europa">Europa</option>
+            <option value="africa">África</option>
+            <option value="asia">Asia</option>
+            <option value="na">NA (Norte América)</option>
+            <option value="sa">SA (Sudamérica)</option>
+            <option value="oceania">Oceanía</option>
+          </select>
+          <button type="submit">REGISTRARSE</button>
+        </form>
+      </section>
     </main>
 
-     <!-- JS -->
+  <!-- VOLVER A LA PÁGINA PRINCIPAL DESPUES DE REGISTRARSE -->
   <script>
     document.querySelector(".form-contacto").addEventListener("submit", function(e){
       e.preventDefault();
