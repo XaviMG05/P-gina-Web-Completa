@@ -1,0 +1,235 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0b0b0b;
+  color:white;
+}
+
+/* HEADER */
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 6%;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-weight:900;
+  letter-spacing:2px;
+  color:#ff9a1f;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  opacity:0.8;
+  transition:0.3s;
+}
+
+nav a:hover{
+  opacity:1;
+  color:#ff9a1f;
+}
+
+.play{
+  padding:10px 18px;
+  background:#ff9a1f;
+  color:black !important;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+.inicio{
+  height:100vh;
+  background:
+    linear-gradient(to right,
+      rgba(0,0,0,0.95),
+      rgba(0,0,0,0.4)
+    ),
+    url("../img/CSGO-Esports.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  align-items:center;
+  padding:0 6%;
+  position:relative;
+}
+
+.inicio-content{
+  position:relative;
+  max-width:700px;
+}
+
+.inicio h1{
+  font-size:70px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+.inicio span{
+  color:#ff9a1f;
+}
+
+.inicio p{
+  color:#ccc;
+  line-height:1.7;
+  font-size:18px;
+}
+
+/* SECCIONES INFO */
+
+.info{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  padding:100px 6%;
+}
+
+.reverse{
+  flex-direction:row-reverse;
+}
+
+.info .text{
+  flex:1;
+}
+
+.info h2{
+  font-size:45px;
+  color:#ff9a1f;
+  margin-bottom:20px;
+}
+
+.info p{
+  color:#ccc;
+  line-height:1.8;
+  font-size:18px;
+}
+
+.info .image{
+  flex:1;
+}
+
+.info img{
+  width:100%;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.info img:hover{
+  transform:scale(1.03);
+}
+
+/* CARDS */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  padding:100px 6%;
+  background:#111;
+}
+
+.card{
+  background:#1a1a1a;
+  padding:30px;
+  border-radius:10px;
+  border-left:4px solid #ff9a1f;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px rgba(255,154,31,0.3);
+}
+
+.card h3{
+  color:#ff9a1f;
+  margin-bottom:15px;
+}
+
+.card p{
+  color:#bbb;
+  line-height:1.6;
+}
+
+/* IMAGENES DE LAS CARDS */
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-top:20px;
+  transition:0.3s;
+  display:block;
+}
+
+.card img:hover{
+  transform:scale(1.03);
+}
+
+/* FOOTER */
+
+footer{
+  background:#050505;
+  text-align:center;
+  padding:40px;
+  color:#777;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .inicio h1{
+    font-size:50px;
+  }
+
+  .info{
+    flex-direction:column;
+  }
+
+  nav{
+    gap:15px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .inicio h1{
+    font-size:38px;
+  }
+
+  .inicio p{
+    font-size:16px;
+  }
+
+}
