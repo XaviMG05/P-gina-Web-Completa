@@ -144,3 +144,22 @@ nav a:hover{
 .form-contacto button:hover {
   background: #ffb347;
 }
+
+.form-contacto select {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 14px 18px;
+  color: #ccc;
+  font-size: 15px;
+  background-position: right 16px center;
+}
+
+.form-contacto select:focus {
+  border-color: #ff9a1f;
+}
+
+.form-contacto select option {
+  background: #1a1a1a;
+  color: white;
+}
