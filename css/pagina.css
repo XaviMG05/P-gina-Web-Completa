@@ -190,6 +190,130 @@ nav a:hover{
   color:#ff9a1f;
 }
 
+.pagina-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.pagina-wrapper main {
+  flex: 1;
+  min-width: 0;
+}
+
+.noticias {
+  position: sticky;
+  top: 90px;
+  width: 320px;
+  flex-shrink: 0;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-top: 3px solid #ff9a1f;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 40px 0;
+}
+.aside-header {
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  padding: 20px 24px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.aside-header h3 {
+  color: #ff9a1f;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.aside-noticia {
+  padding: 16px 24px;
+  border-bottom: 1px solid #1a1a1a;
+  transition: background 0.3s;
+}
+
+.aside-noticia:hover {
+  background: #1a1a1a;
+}
+
+.aside-noticia.destacada {
+  background: rgba(255, 154, 31, 0.05);
+  border-left: 3px solid #ff9a1f;
+}
+
+.aside-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+  background: #ff9a1f;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.aside-tag.torneo {
+  background: #4fc3f7;
+}
+
+.aside-tag.skins {
+  background: #ce93d8;
+}
+
+.aside-noticia p {
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.aside-fecha {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.aside-ranking {
+  padding: 20px 24px;
+}
+
+.aside-ranking h4 {
+  color: #ff9a1f;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.aside-ranking ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aside-ranking ol li {
+  color: #ccc;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s;
+}
+
+.aside-ranking ol li:hover {
+  color: #ff9a1f;
+}
+
+.rank-num {
+  color: #ff9a1f;
+  font-weight: 900;
+  font-size: 13px;
+  width: 24px;
+}
+
 /* FOOTER */
 
 footer{
