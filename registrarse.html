@@ -61,6 +61,19 @@
   </section>
     </main>
 
+     <!-- JS -->
+  <script>
+    document.querySelector(".form-contacto").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      // guardar login
+      localStorage.setItem("cs2_user", "true");
+
+      // ir a la página principal real
+      window.location.href = "principal.html";
+    });
+  </script>
+  
   <!-- FOOTER -->
   <footer>
     <p>© 2026 Counter-Strike 2 Fan Page Replica</p>
